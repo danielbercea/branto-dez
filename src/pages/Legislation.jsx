@@ -8,7 +8,7 @@ export default function Legislation() {
       </p>
 
       <div className="card" style={{ marginTop: 18 }}>
-        <img src="/images/legislatie2.png" alt="Legislație" />
+        <img src={`${import.meta.env.BASE_URL}images/legislatie2.png`} alt="Legislație" />
         <div className="card-body">
           <h3 className="card-title">Documente & informare</h3>
           <p className="card-text">
