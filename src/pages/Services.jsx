@@ -8,7 +8,7 @@ export default function Services() {
 
       <div className="grid">
         <div className="card">
-          <img src="/images/gallery/book1-150x150.png" alt="Dezinsecție" />
+          <img src={`${import.meta.env.BASE_URL}images/gallery/book1-150x150.png`} alt="Dezinsecție" />
           <div className="card-body">
             <h3 className="card-title">Dezinsecție</h3>
             <p className="card-text">
@@ -18,7 +18,7 @@ export default function Services() {
         </div>
 
         <div className="card">
-          <img src="/images/gallery/Pest-Control-1-150x150.jpg" alt="Dezinfecție" />
+          <img src={`${import.meta.env.BASE_URL}images/gallery/Pest-Control-1-150x150.jpg`} alt="Dezinfecție" />
           <div className="card-body">
             <h3 className="card-title">Dezinfecție</h3>
             <p className="card-text">
@@ -28,7 +28,7 @@ export default function Services() {
         </div>
 
         <div className="card">
-          <img src="/images/gallery/da.jpg" alt="Deratizare" />
+          <img src={`${import.meta.env.BASE_URL}images/gallery/da.jpg`} alt="Deratizare" />
           <div className="card-body">
             <h3 className="card-title">Deratizare</h3>
             <p className="card-text">
