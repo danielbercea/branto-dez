@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
     <>
       <section className="hero">
         <div className="container hero-inner">
-          <img className="hero-logo" src="/images/brand/logobr.png" alt="Branto-Dez" />
+          <img className="hero-logo" src={`${import.meta.env.BASE_URL}images/brand/logobr.png`} alt="Branto-Dez" />
           <h1>Dezinsecție · Dezinfecție · Deratizare</h1>
           <p>Sibiu — intervenții rapide, substanțe avizate, personal calificat.</p>
 
@@ -14,8 +16,8 @@ export default function Home() {
           </div>
 
           <div className="cta">
-            <a className="btn btn-primary" href="/contact">Contact</a>
-            <a className="btn" href="/domenii">Vezi domenii</a>
+            <Link className="btn btn-primary" to="/contact">Contact</Link>
+            <Link className="btn" to="/domenii">Vezi domenii</Link>
           </div>
         </div>
       </section>
@@ -30,7 +32,7 @@ export default function Home() {
 
         <div className="grid" style={{ marginTop: 22 }}>
           <div className="card">
-            <img src="/images/gallery/Pest-Control-1-150x150.jpg" alt="Intervenții DDD" />
+            <img src={`${import.meta.env.BASE_URL}images/gallery/Pest-Control-1-150x150.jpg`} alt="Intervenții DDD" />
             <div className="card-body">
               <h3 className="card-title">Intervenții eficiente</h3>
               <p className="card-text">Planuri periodice + intervenții punctuale, adaptate spațiului.</p>
@@ -38,7 +40,7 @@ export default function Home() {
           </div>
 
           <div className="card">
-            <img src="/images/gallery/pest-control-staff-1-150x150.jpg" alt="Echipă" />
+            <img src={`${import.meta.env.BASE_URL}images/gallery/pest-control-staff-1-150x150.jpg`} alt="Echipă" />
             <div className="card-body">
               <h3 className="card-title">Echipă & logistică</h3>
               <p className="card-text">Personal calificat, echipamente moderne, proceduri clare.</p>
@@ -46,7 +48,7 @@ export default function Home() {
           </div>
 
           <div className="card">
-            <img src="/images/gallery/da.jpg" alt="Control dăunători" />
+            <img src={`${import.meta.env.BASE_URL}images/gallery/da.jpg`} alt="Control dăunători" />
             <div className="card-body">
               <h3 className="card-title">Siguranță & conformitate</h3>
               <p className="card-text">Intervenții cu grijă pentru oameni, animale și spații sensibile.</p>
