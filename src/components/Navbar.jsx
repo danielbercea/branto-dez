@@ -1,12 +1,12 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <header className="nav">
       <div className="container nav-inner">
-        <a href="/" aria-label="Branto-Dez Home">
-          <img src="/images/brand/logo-1.png" alt="Branto-Dez" height="44" />
-        </a>
+        <Link to="/" aria-label="Branto-Dez — Acasă">
+          <img src={`${import.meta.env.BASE_URL}images/brand/logo-1.png`} alt="Branto-Dez" height="44" />
+        </Link>
 
         <nav className="nav-links">
           <NavLink to="/" end>Home</NavLink>
